@@ -36,7 +36,7 @@ const Main1 = () => {
               Work with all the necessary information and tools to boost your
               strategy and invest in crypto hustle free.
             </Typography>
-            <Tooltip title="Comming Soon">
+            <Tooltip title="Coming Soon">
               <Button
                 style={{
                   fontFamily: "Work Sans",
