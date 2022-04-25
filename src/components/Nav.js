@@ -68,7 +68,9 @@ const Nav = () => {
           </Tooltip>
         </Grid>
         <Tooltip title="Comming Soon">
-          <Button style={navAppStyle}>App</Button>
+          <Button style={navAppStyle} onClick={handleOpen}>
+            App
+          </Button>
         </Tooltip>
       </Grid>
       <Modal
@@ -78,55 +80,66 @@ const Nav = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style} textAlign="center">
-          <Grid display={"flex"} justifyContent="flex-end">
-            <CloseIcon onClick={handleClose} style={{ cursor: "pointer" }} />
-          </Grid>
-          <img src={emailImage} alt="email" />
-          <Grid>
-            <Typography
-              variant="body1"
-              fontSize={28}
-              fontStyle={"Mulish"}
-              fontWeight={500}
-            >
-              Get early access to our beta version
-            </Typography>
-          </Grid>
-          <Grid alignItems={"center"} width={"90%"} margin="auto" mt={2}>
-            <Paper
-              component="form"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                border: "1px solid #EFF0F6",
-                borderRadius: 20,
-                padding: 2,
-              }}
-              elevation={0}
-            >
-              <InputBase
-                sx={{ ml: 1, flex: 1 }}
-                placeholder="Enter your email"
-                inputProps={{ "aria-label": "Enter your email" }}
-              />
-              <Button
-                variant="filled"
-                style={{
-                  backgroundColor: "#F7931A",
-                  color: "#fff",
-                  height: "50px",
-                  borderRadius: 30,
-                  width: "150px",
-                  fontFamily: "DM Sans",
-                  fontWeight: 500,
-                  fontStyle: "bold",
-                }}
-                disabled
+          <iframe
+            title="basketo"
+            src="https://basketo.substack.com/embed"
+            width="480"
+            height="320"
+            style={{ background: "white" }}
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+          {/*<>
+            <Grid display={"flex"} justifyContent="flex-end">
+              <CloseIcon onClick={handleClose} style={{ cursor: "pointer" }} />
+            </Grid>
+            <img src={emailImage} alt="email" />
+            <Grid>
+              <Typography
+                variant="body1"
+                fontSize={28}
+                fontStyle={"Mulish"}
+                fontWeight={500}
               >
-                Subscribe
-              </Button>
-            </Paper>
-          </Grid>
+                Get early access to our beta version
+              </Typography>
+            </Grid>
+            <Grid alignItems={"center"} width={"90%"} margin="auto" mt={2}>
+              <Paper
+                component="form"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  border: "1px solid #EFF0F6",
+                  borderRadius: 20,
+                  padding: 2,
+                }}
+                elevation={0}
+              >
+                <InputBase
+                  sx={{ ml: 1, flex: 1 }}
+                  placeholder="Enter your email"
+                  inputProps={{ "aria-label": "Enter your email" }}
+                />
+                <Button
+                  variant="filled"
+                  style={{
+                    backgroundColor: "#F7931A",
+                    color: "#fff",
+                    height: "50px",
+                    borderRadius: 30,
+                    width: "150px",
+                    fontFamily: "DM Sans",
+                    fontWeight: 500,
+                    fontStyle: "bold",
+                  }}
+                  disabled
+                >
+                  Subscribe
+                </Button>
+              </Paper>
+            </Grid>
+                </>*/}
         </Box>
       </Modal>
     </Container>

@@ -25,7 +25,7 @@ function App() {
       <Grid>
         <Main2 />
         <Main3 />
-        {/* <Faq /> */}
+        <Faq />
         <Footer />
       </Grid>
     </div>

@@ -26,56 +26,6 @@ const Faq = () => {
           style={{ height: 400, marginTop: 20, backgroundColor: "#E5E5E526" }}
         ></Paper>
       </Grid>
-      <Grid mt={10} mb={10}>
-        <Typography variant="caption">Stay up to date</Typography>
-        <Grid
-          display={"flex"}
-          justifyContent={"space-between"}
-          alignItems={"center"}
-        >
-          <Typography variant="h6" sx={{ width: "40%", fontFamily: "Mulish" }}>
-            Youre’ probably thinking, “Another newsletter?” But we promise,
-            youre going to love ours!
-          </Typography>
-          <Paper
-            component="form"
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              border: "2px solid #EFF0F6",
-              width: "40%",
-              borderTopRightRadius: 14,
-              borderBottomRightRadius: 14,
-            }}
-            elevation={0}
-          >
-            <InputBase
-              sx={{ ml: 1, flex: 1 }}
-              placeholder="Your Email"
-              inputProps={{ "aria-label": "Your Email" }}
-              backgroundColor="#E6E6E6"
-            />
-            <Button
-              variant="filled"
-              style={{
-                backgroundColor: "#F7931A",
-                color: "#fff",
-                height: "50px",
-                // borderRadius: ,
-                width: "100px",
-                fontFamily: "DM Sans",
-                fontWeight: 500,
-                fontStyle: "bold",
-                borderTopRightRadius: 14,
-                borderBottomRightRadius: 14,
-              }}
-              disabled
-            >
-              Subscribe
-            </Button>
-          </Paper>
-        </Grid>
-      </Grid>
     </Container>
   );
 };
