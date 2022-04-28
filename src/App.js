@@ -7,6 +7,7 @@ import Faq from "./components/Faq";
 import Main1 from "./components/Main1";
 import Main2 from "./components/Main2";
 import Main3 from "./components/Main3";
+import Achievements from "./components/Achievements";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       <Grid>
         <Main2 />
         <Main3 />
-        <Faq />
+        <Achievements />
+        {/* <Faq /> */}
         <Footer />
       </Grid>
     </div>

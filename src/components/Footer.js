@@ -28,8 +28,8 @@ const FooterTitles = ({ title }) => {
     <Typography
       style={{
         fontFamily: "Roboto",
-        fontWeight: 400,
-        fontSize: "14px",
+        fontWeight: 500,
+        fontSize: "16px",
         marginTop: "12px",
         cursor: "pointer",
       }}
@@ -114,7 +114,7 @@ const Footer = () => {
             justifyContent="space-between"
             alignItems={"center"}
           >
-            <Grid>
+            <Grid display={"flex"} gap={"3rem"} alignItems={"baseline"}>
               <Typography
                 style={{
                   fontFamily: "Roboto",
@@ -122,16 +122,61 @@ const Footer = () => {
                   fontWeight: 700,
                 }}
               >
-                Follow us
+                Basketo
               </Typography>
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                href="https://www.linkedin.com/company/basketo-finance/"
+              >
+                <FooterTitles title={"About Us"} />
+              </a>
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                href="https://www.linkedin.com/jobs/view/blockchain-developer-at-basketo-finance-2909155901/?originalSubdomain=in"
+              >
+                <FooterTitles title={"Careers"} />
+              </a>
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                href="https://medium.com/@bhavishramaswamy/before-starting-a-blockchain-startup-e7482c6f1fae/"
+              >
+                <FooterTitles title={"Blog"} />
+              </a>
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                href="https://www.linkedin.com/search/results/people/?currentCompany=%5B%2278814525%22%5D&origin=COMPANY_PAGE_CANNED_SEARCH&sid=R67/"
+              >
+                <FooterTitles title={"Team"} />
+              </a>
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                }}
+                href="mailto:company@basketo.finance"
+              >
+                <FooterTitles title={"Contact Us"} />
+              </a>
             </Grid>
             <Grid display={"flex"} gap={2} alignItems="center">
               {/* <a href="https://www.google.com">
                 <Facebook />
               </a> */}
-              {/* <Github /> */}
-              {/* <Twitter /> */}
-              {/* <Instagram /> */}
+              <Github />
+              <Twitter />
+              <Instagram />
               <a href="https://www.linkedin.com/company/basketo-finance/">
                 <Linkedin />
               </a>
@@ -151,7 +196,7 @@ const Footer = () => {
       >
         <hr />
       </Grid>
-      <Grid mt={2} mb={2}>
+      {/* <Grid mt={2} mb={2}>
         <Container>
           <Grid display={"flex"} gap={"20rem"}>
             <Grid>
@@ -255,7 +300,7 @@ const Footer = () => {
         }}
       >
         <hr />
-      </Grid>
+      </Grid> */}
       <Grid mt={1} mb={4}>
         <Container>
           <Typography variant="caption">© 2022 All Rights Reserved</Typography>

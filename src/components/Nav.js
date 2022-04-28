@@ -67,11 +67,10 @@ const Nav = () => {
             <Typography style={navDocsStyle}>Docs</Typography>
           </Tooltip>
         </Grid>
-        <Tooltip title="Comming Soon">
-          <Button style={navAppStyle} onClick={handleOpen}>
-            App
-          </Button>
-        </Tooltip>
+        {/* <Tooltip title="Comming Soon"></Tooltip> */}
+        <Button style={navAppStyle} onClick={handleOpen}>
+          App
+        </Button>
       </Grid>
       <Modal
         open={open}
