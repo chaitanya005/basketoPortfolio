@@ -6,14 +6,14 @@ const Achievements = () => {
   return (
     <Grid mt={10} mb={10}>
       <Container>
-        <Grid textAlign={"center"}>
+        {/* <Grid textAlign={"center"}>
           <Typography
             variant="h4"
             style={{ fontFamily: "Work Sans", fontWeight: 700 }}
           >
             Achievements of <span style={{ color: "#FB5E05" }}>Basketo</span>
           </Typography>
-        </Grid>
+        </Grid> */}
         <Grid
           display={"flex"}
           //   gap={"10rem"}

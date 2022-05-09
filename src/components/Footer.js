@@ -115,7 +115,7 @@ const Footer = () => {
             alignItems={"center"}
           >
             <Grid display={"flex"} gap={"3rem"} alignItems={"baseline"}>
-              <Typography
+              {/* <Typography
                 style={{
                   fontFamily: "Roboto",
                   fontSize: "22px",
@@ -123,7 +123,8 @@ const Footer = () => {
                 }}
               >
                 Basketo
-              </Typography>
+              </Typography> */}
+              <img src="/basketo_logo.png" alt="" style={{ width: "150px" }} />
               <a
                 style={{
                   textDecoration: "none",

@@ -33,6 +33,7 @@ const navAppStyle = {
 
 const navDocsStyle = {
   fontSize: 20,
+  fontWeight: "bold",
   fontFamily: "Mulish",
   cursor: "pointer",
 };
@@ -58,11 +59,7 @@ const Nav = () => {
     <Container>
       <Grid style={navGridStyle}>
         <Grid display="flex" gap={4} alignContent="center" alignItems="center">
-          {/* <BasketoLogo height={100} width={180} /> */}
-          <Typography style={{ fontSize: 20 }} variant="h6">
-            Basketo
-          </Typography>
-          {/* <BasketoLogo width={300} height={70} /> */}
+          <img src="/basketo_logo.png" alt="" style={{ width: "180px" }} />
           <Tooltip title="Comming Soon">
             <Typography style={navDocsStyle}>Docs</Typography>
           </Tooltip>

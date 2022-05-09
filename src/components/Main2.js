@@ -1,5 +1,5 @@
 import { Container, Grid, Paper, Typography } from "@mui/material";
-import cryptoImage from "../assets/topCrypto.jpeg";
+import cryptoImage from "../assets/defi_basket.png";
 
 const Main2 = () => {
   return (
@@ -19,9 +19,8 @@ const Main2 = () => {
             mt={10}
           >
             <Grid>
-              <Paper style={{ width: 400, height: 300 }}>
-                <img height={300} src={cryptoImage} alt="cryptoimage" />
-              </Paper>
+              <img height={400} src={cryptoImage} alt="cryptoimage" />
+              {/* <Paper style={{ width: 400, height: 300 }}></Paper> */}
             </Grid>
             <Grid
               style={{

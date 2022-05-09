@@ -1,5 +1,5 @@
 import { Container, Typography, Grid, Button } from "@mui/material";
-import { ReactComponent as GroupImage } from "../assets/GroupImage.svg";
+import { ReactComponent as GroupImage } from "../assets/GroupImg.svg";
 import Tooltip from "@mui/material/Tooltip";
 
 const titleStyle = {
@@ -33,8 +33,8 @@ const Main1 = () => {
                 width: 360,
               }}
             >
-              Work with all the necessary information and tools to boost your
-              strategy and invest in crypto hustle free.
+              Boost you investment strategies with all the essential data, and
+              tools
             </Typography>
             <Tooltip title="Coming Soon">
               <Button
@@ -53,7 +53,7 @@ const Main1 = () => {
             </Tooltip>
           </Grid>
         </Grid>
-        <GroupImage width={800} height={800} style={{ marginLeft: 80 }} />
+        <GroupImage width={800} height={650} />
         {/* <BackgroundVector /> */}
       </Grid>
     </Container>

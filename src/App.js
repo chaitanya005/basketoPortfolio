@@ -12,24 +12,19 @@ import Achievements from "./components/Achievements";
 function App() {
   return (
     <div className="App">
-      <Grid
-        style={{
-          backgroundImage: `url(${BackgroundVector})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <Nav />
-        <Main1 />
-      </Grid>
-      <Grid>
-        <Main2 />
-        <Main3 />
-        <Achievements />
-        {/* <Faq /> */}
-        <Footer />
-      </Grid>
+      <Container>
+        <Grid>
+          <Nav />
+          <Main1 />
+        </Grid>
+        <Grid>
+          <Main2 />
+          <Main3 />
+          <Achievements />
+          {/* <Faq /> */}
+          <Footer />
+        </Grid>
+      </Container>
     </div>
   );
 }
